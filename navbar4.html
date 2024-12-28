@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    
+ <style>
+            *{
+                margin: 0%;
+
+        } 
+        body {
+            margin: 0;
+            height: 1000vh;
+
+        }
+
+        /* Navigation bar styling */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            padding: 0 10px;
+            z-index: 1000;
+        }
+
+        .navbar .logo-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo-title img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            position: relative;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+            display: block;
+        }
+
+        .navbar a:hover, .navbar .dropdown:hover > a {
+            background-color: #575757;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown > a::after {
+            content: '\25BC'; /* Down arrow */
+            margin-left: 5px;
+            font-size: 0.8em;
+        }
+
+        .content {
+            padding-top: 60px;
+        }
+    </style> 
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo-title">
+            <img src="data:image/png;base64,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" alt="Logo">
+            <span style="color: white; font-size: 20px;"><strong>Vamshi Project</strong></span>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li class="dropdown">
+                <a href="#clients">Our Clients</a>
+                <div class="dropdown-content">
+                    <a href="https://www.tspolice.gov.in">Telanga police</a>
+                    <a href="https://web.whatsapp.com/">whatsapp</a>
+                    <a href="https://www.shopify.com/">Shopify</a>
+                    <a href="https://www.blinkit.com">Blinkit</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#services">Services</a>
+                <div class="dropdown-content">
+                    <a href="#service1">Mobile App Development</a>
+                    <a href="#service2">Web Development</a>
+                    <a href="#service3">Database Services</a>
+                    <a href="#service4">Website Hosting</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#contact">Contact Us</a>
+                <div class="dropdown-content">
+                    <a href="mail">mail us</a>
+                    <a href="#phone">Phone</a>
+                    <a href="#address">Address</a>
+                    <a href="#support">Support</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to Our Website</h1>
+        <p>Here is some content below the navigation bar.</p>
+        <img src="https://lawyersadda.in/img/slider-6.jpg" height="402px" alt="">
+    <img src="https://lawyersadda.in/img/slider-6.jpg" alt="">
+
+    </div>
+
+</body>
+</html>
